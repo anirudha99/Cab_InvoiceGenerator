@@ -1,12 +1,22 @@
 package com.cabinvoice;
 
 public class Ride {
-
+	
+	int userId;
 	double distance, time;
 
-	public Ride(double distance, double time) {
+	public Ride(int userId,double distance, double time) {
 		this.distance = distance;
 		this.time = time;
+		this.userId = userId;
+	}
+
+	public int getUserId() {
+		return userId;
+	}
+
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
 
 	public double getDistance() {
